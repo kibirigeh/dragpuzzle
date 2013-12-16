@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/gameDoneR"
+    android:background="@drawable/mainbg">
+    <TextView
+        android:id="@+id/GameDoneText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:text="@string/finishGame"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/GameDoneText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:text="@string/creditGame"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/GameDoneText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+         android:layout_alignParentBottom="true"
+        android:text="@string/creditGame2"
+        android:textSize="25sp"/>
+</RelativeLayout>

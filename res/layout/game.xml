@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/gameLevelLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/LevelChooseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/levelChooseButt"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LevelChooseText"
+        android:background="@color/transparent" />
+
+    <com.google.ads.AdView
+        android:id="@+id/adViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="a15022e7f58f7d7"
+        ads:loadAdOnCreate="true" />
+
+    <Button
+        android:id="@+id/customLevel"
+        style="@style/SampleButtStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:text="Custom Image" 
+        android:textSize="25sp"
+        android:clickable="true"/>
+    <!-- 
+    <Button
+        android:id="@+id/ExitButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/customLevel"
+        android:layout_marginRight="16dp"
+        android:text="Exit"
+        android:textSize="25sp"
+        android:clickable="true" />
+        -->
+
+    <Button
+        android:id="@+id/playLevel"
+        style="@style/SampleButtStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+       	android:layout_below="@id/customLevel"
+        android:layout_marginRight="16dp"
+        android:text="Play level" 
+        android:textSize="25sp"
+        android:clickable="true"/>
+
+</RelativeLayout>

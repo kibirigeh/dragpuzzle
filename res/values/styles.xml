@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+	<style name="SampleButtStyle" parent="android:Widget.Button">
+    <item name="android:layout_width">fill_parent</item> 
+    <item name="android:textColor">#ff000000</item>
+    <item name="android:layout_height">25dip</item>
+    <item name="android:layout_marginTop">10dip</item>
+    <item name="android:layout_marginRight">55dip</item>    
+    <item name="android:layout_marginLeft">15dip</item>    
+    <item name="android:gravity">left|center</item> 
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    style="@android:style/Theme.Holo.Dialog"
+    android:background="@color/transparent"
+    >
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp" 
+        android:src="@drawable/ic_launcher"/> 
+    <TextView
+        android:id="@+id/alertText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/image"
+        android:text="@string/alertText"
+        android:textSize="25sp"/> 
+     <Button
+        android:id="@+id/alertButton"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:text=" start "
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/image"
+        style="@style/SampleButtStyle"
+        />
+     <Button
+        android:id="@+id/alertCancel"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:text=" Quit "
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/image"
+        android:layout_alignParentRight="true"
+        style="@style/SampleButtStyle"
+        />
+</RelativeLayout>

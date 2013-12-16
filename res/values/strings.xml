@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DragActivity!</string>
+    <string name="app_name">GDrag</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_banner_example">BannerExample</string>
+    <string name="alertText">Solve puzzle in 90 sec</string>
+    <string name="levelChooseButt">Choose Level</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="finishGame">Congratulations ,You have Finished the Game. </string>
+    <string name="creditGame">Thanks for Playing. </string>
+    <string name="creditGame2">Images from http://www.hdwallpapers.in  </string>
+
+</resources>

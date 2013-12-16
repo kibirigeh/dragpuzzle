@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/gameState"
+    android:background="@color/transparent">
+    <LinearLayout
+        android:id="@+id/adL4"
+        android:layout_width="fill_parent"
+   		android:layout_height="50dp"
+   		 android:layout_alignParentTop="true"
+   		 android:background="@color/black"
+        >
+        <com.google.ads.AdView android:id="@+id/adView4"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerInParent="true"
+                           ads:adUnitId="a15022e7f58f7d7"
+                           ads:adSize="BANNER" 
+                           ads:loadAdOnCreate="true"
+                           android:background="@color/black"/>
+        </LinearLayout>
+        
+    <LinearLayout 
+         android:id="@+id/adB5"
+        android:layout_width="fill_parent"
+   		android:layout_height="50dp"
+   		 android:layout_alignParentBottom="true"
+   		 android:background="@color/black"
+        >
+        <com.google.ads.AdView android:id="@+id/adView"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerInParent="true"
+                           ads:adUnitId="a15022e7f58f7d7"
+                           ads:adSize="BANNER" 
+                           ads:loadAdOnCreate="true"
+                           android:background="@color/black"/>
+        </LinearLayout>   
+   	<LinearLayout 
+   	    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/gameStateLinear"
+    android:background="@color/transparent"
+    android:layout_centerInParent="true"
+    android:layout_above="@id/adB5"
+    android:layout_below="@id/adL4">
+        <Button
+        android:id="@+id/Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="139dp"
+        android:textSize="30sp"
+        android:text="Play Next" 
+        style="@style/SampleButtStyle"
+        /> 
+   	</LinearLayout>   
+</RelativeLayout>
